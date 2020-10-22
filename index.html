@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col border">
+                <h1>Kevin Gámez</h1>
+                <img class="img-fluid max-width: 100% height: auto" src="https://lh3.googleusercontent.com/NVmpcuoZqPrArTv0weyhKSwYIrQHarz6BJQw6u17qWKWd3B0D-fVZSw-8TBbTWDnKx6tNid2lckCTbSuoAMUUwgBcViVIaExGYPgzBqOjktHhLDPzu4PsUrZ8s6lp7MbKMQxkNeIHD20hJEs6Mo75Ze_erTcQwqjvaGUKSru5YHvM3MoQm0nmDMX7r89slAxFHjHEf1mZxFda_P9F5Vg_XkBEYKvX31anhaOz5qtXU7Zkkw8xexi00P7M_2SiPd9YnR7bCcUH_oacKcpGvf-JYBth8Ghh0CYUEEMCbH7qQKnUnYNSHYFdFKrWptUwWmLgWb3bsaPDGi_inyfGcDR54-_iFJgMl7sHl9yLKCV9Z9gkaZQX6fhF-7xafoa_PmLECMgdhst5JJ5fTiLIuIZpZBhjHgPD30tChW778yBfytMpExdsv6-Hv5ezdqOP90zVomKX1jFATujWOuGeNVVexI2bMkPYZ7rPi2ZP4ahv7decHxgZFp8OIJuuBYcO1RiKzwTZ-9uo5FkuxKSpboTiM7Z0BWL2wnvKPpdu4t2Bhf0dX0IqsGDtPEz9TU99XD4TmZKUzTlQIHj4NjAtd_Sj9ZK8Qs62Ij63efp-p5wDYjf8DnVCqBpD0v90vgpfuer5Wj9LpNxeVAy_yhR-59OtQfgG7-L3o_xutOvCLis3_l2WAiq-i4ipcg_n5u-Cg=s640-no?authuser=0" alt="Avatar">
+                <div class="h3 p-3">Datos Personales</div>
+                <table class="table">
+
+                    <tbody id="students">
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="h3 p-3">Cursos Actuales</div>
+                        <form class="m-3">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="search-box"
+                                        placeholder="Filtrar por nombre">
+                                </div>
+                                <div class="col">
+                                    <button type="button" id="button-filterByName"
+                                        class="btn btn-success">Aplicar</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form style="margin:10px;">
+                            <div class="form-row">
+                              <div class="col">
+                                  <input type="number" class="form-control" id="search-box1" placeholder="Ingresar Minimo Creditos">
+                              </div>
+                              <div class="col">
+                                <input type="number" class="form-control" id="search-box2" placeholder="Ingresar Maximo Creditos">
+                            </div>
+                              <div class="col">
+                                  <button type="button" id="button-filterByCredits" class="btn btn-success">Buscar rango de créditos</button>
+                              </div>
+                            </div>
+                        </form>
+                    
+
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Curso</th>
+                                    <th>Profesor</th>
+                                    <th>Créditos</th>
+                                </tr>
+                            </thead>
+                            <tbody id="courses">
+                               
+                            </tbody>
+                        </table>
+                        <div class="row justify-content-end">
+                            <h5 class="col-4"><strong>Total Créditos:</strong></h5>
+                            <h5 class="col-4" id="total-credits"><strong></strong></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./scripts/course.js"></script>
+    <script type="module" src="./scripts/dataCourses.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+    
+</body>
+
+</html>
